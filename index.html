@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Budgetry</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <diV class="container__top">
+                <div class="container__main">
+                    <div class="budget">
+                        <div class="budget__title">
+                            Available budget in 
+                            <span class="budget__title--month">
+                                %Month%
+                            </span>
+                        </div>
+                        <div class="budget__value" id="budgetDisp">+ 2,345.64</div>
+                        <div class="budget__income clearfix">
+                            <div class="budget__income--text">Income</div>
+                            <div class="right">
+                                <div class="budget__income--value" id="incomeDisp">+ 4,300.00</div>
+                                <div class="budget__income--percentage" id="incPer">45%</div>
+                            </div>
+                        </div>
+                        <div class="budget__expenses clearfix">
+                            <div class="budget__expenses--text">Expenses</div>
+                            <div class="right clearfix">
+                                <div class="budget__expenses--value" id="expenseDisp">- 1,954.36</div>
+                                <div class="budget__expenses--percentage" id="expPer">45%</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container__add">
+                    <div class="container__add__center">
+                        <select class="container__add__select">
+                            <option value="inc" selected>+</option>
+                            <option value="exp">-</option>
+                        </select>
+                        <input class="desc" type="text" placeholder="Add Description">
+                        <input class="number--value" type="number" placeholder="Value">
+                        <button class="enter--button"><i class="ion-ios-checkmark-outline"></i></button>
+                    </div>
+                </div>
+            </diV>
+            <div class="container__bottom clearfix">
+                <div class="container__income">
+                    <h2 class="container__income__header">
+                        income
+                    </h2>
+                    <div class="container__income__list">
+                        <!--<div class="item clearfix" id="income-0">
+                            <div class="item__desc">
+                                salary
+                            </div>
+                            <div class="right clearfix">
+                                <div class="item__value">
+                                    + 2000
+                                </div>
+                                <div class="item__delete">
+                                    <button class="btn-delete"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item clearfix" id="income-1">
+                            <div class="item__desc">
+                                salary
+                            </div>
+                            <div class="right clearfix">
+                                <div class="item__value">
+                                    + 2000
+                                </div>
+                                <div class="item__delete">
+                                    <button class="btn-delete"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="container__expenses">
+                    <h2 class="container__expenses__header">
+                        expenses
+                    </h2>
+                    <div class="container__expenses__list">
+                        <!--<div class="item clearfix" id="expense-0">
+                            <div class="item__desc">
+                                rent
+                            </div>
+                            <div class="right clearfix">
+                                <div class="item__value">
+                                    - 2000
+                                </div>
+                                <div class="item__percentage">
+                                    21%
+                                </div>
+                                <div class="item__delete">
+                                    <button class="btn-delete"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item clearfix" id="expense-1">
+                            <div class="item__desc">
+                                rent
+                            </div>
+                            <div class="right clearfix">
+                                <div class="item__value">
+                                    - 2000
+                                </div>
+                                <div class="item__percentage">
+                                    21%
+                                </div>
+                                <div class="item__delete">
+                                    <button class="btn-delete"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="app.js"></script>
+        <!--<script type="text/javascript" src="sidescript.js"></script>-->
+    </body>
+
+</html>

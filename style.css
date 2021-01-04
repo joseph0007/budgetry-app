@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #555;
+    height: 100vh;
+    width: auto;
+}
+/*
+.clearfix{zoom: 1;}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}*/
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*-----------------------partioning--------------------------*/
+.container{
+    height: 100vh;
+}
+
+.container__top{
+    height: 50%;
+}
+
+.container__main{
+    height: 80%; 
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) , url(back.png); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+
+.container__add{
+    height: 20%;
+    background-color: #f7f7f7;
+    box-shadow: 0 1px 55px -17px;
+}
+
+.container__bottom{
+    width: 850px;
+    margin: 80px auto;
+}
+
+.container__add__center{
+    height: 100%;
+    padding: 10px;
+    padding-top: 20px;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+
+/*--------------------styling the add bar-------------------*/
+.container__add__center select{
+    width: 50px;
+}
+
+.container__add__center input[type = number],
+.container__add__center input[type = text],
+.container__add__center select{
+    display: inline-block;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    margin-right: 10px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: border 0.3s;
+    -webkit-transition: border 0.3s;
+    -moz-transition: border 0.3s;
+    -ms-transition: border 0.3s;
+    -o-transition: border 0.3s;
+}
+
+.container__add__center input[type = number]:focus,
+.container__add__center input[type = text]:focus,
+.container__add__center select:focus{
+    outline: none;
+    border: 1px solid #28B9B5;
+}
+
+.container__add__center input[type = text]{
+    width: 400px;
+    padding: 12px 15px;
+}
+
+.container__add__center input[type = number]{
+    width: 200px;
+    padding: 12px 15px;
+}
+
+.container__add__center button{
+    display: inline-block;
+    height: 35px;
+    border: none;
+    background: none;
+    color: #28B9B5;
+    font-weight: 100;
+    font-size: 35px;
+    vertical-align: middle;
+}   
+
+.container__add__center button:active{
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+}
+
+.container__add__center button:focus{
+    outline: none;
+}
+
+/*--------------------top part-------------------*/
+.budget{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.budget__income,
+.budget__expenses{
+    padding: 10px;
+    width: 350px;
+}
+
+.budget__income{
+    background-color: #28B9B5;
+    margin-bottom: 10px;
+}
+
+.budget__expenses{
+    background-color: #FF5049;
+}
+
+.budget__title{
+    font-size: 19px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.budget__value{
+    text-align: center;
+    font-size: 46px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.budget__income--text,
+.budget__expenses--text{
+    float: left;   
+    padding-top: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #555;
+}
+
+.budget__income--value,
+.budget__expenses--value{
+    float: left;
+    font-size: 15px;
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.budget__income--percentage,
+.budget__expenses--percentage {
+    float: left;
+    width: 34px;
+    font-size: 11px;
+    padding: 7px 0;
+    margin-left: 10px;
+}
+
+.budget__expenses--percentage,
+.budget__income--percentage{
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.212);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.red{
+    color: #FF5049 !important;
+}
+.red__outline:focus{
+    border: 1px solid #FF5049 !important;
+}
+
+/*--------------------bottom part-------------------*/
+
+.container__income{
+    margin-right: 20px;
+}
+
+.container__income,
+.container__expenses{
+    display: block;
+    float: left;
+    width: 400px;
+
+}
+
+.container__income__header,
+.container__expenses__header{
+    font-size: 23px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.container__income__header{
+    color: #28B9B5;
+}
+
+.container__expenses__header{
+    color: #FF5049;
+}
+
+.item__desc,
+.item__value{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.item__desc{
+    display: block;
+    float: left;
+    text-transform: capitalize;
+}
+
+.right{
+    float: right;
+}
+
+.item__value{
+    float: left;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+
+.item__percentage{
+    width: 32px;
+    float: left;
+    font-size: 13px;
+    font-weight: 300;
+    background-color: rgb(255, 198, 196);
+    color: #FF5049;
+    padding: 2px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+
+
+
+.container__income .item__value{
+    color: #28B9B5;
+}
+
+.container__expenses .item__value{
+    color: #FF5049;
+}
+
+.item{
+    padding: 10px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.item__delete{
+    float: left;
+}
+
+.btn-delete{
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    line-height: 1;
+    display: none;
+    
+}
+
+.btn-delete:active{
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+}
+
+.btn-delete:focus{
+    outline: none;
+}
+
+.container__income__list .btn-delete{
+    color: #28B9B5;
+}
+
+.container__expenses__list .btn-delete{
+    color: #FF5049;
+}
+
+.item:hover .btn-delete{
+    display: block;
+}
+
+.btn-delete i{
+    font-size: 20px;
+    
+}
+
+.item:hover .item__percentage {
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+}
+
+.item:hover .item__value {
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+}
+
+.item:nth-child(even) { background-color: #f7f7f7; }
+
+
